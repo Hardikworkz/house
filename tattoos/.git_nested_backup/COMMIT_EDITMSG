@@ -1,0 +1,22 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	new file:   .env.example
+#	modified:   src/components/ArtistSection.css
+#	modified:   src/components/BenefitSection.css
+#	modified:   src/components/BenefitsSection.jsx
+#	modified:   src/components/BookingSection.css
+#	modified:   src/components/BookingSection.jsx
+#	modified:   src/components/CursorTrail.css
+#	modified:   src/components/CursorTrail.jsx
+#	modified:   src/components/Footer.css
+#	renamed:    src/components/Hero.css -> src/components/Navbar.css
+#	renamed:    src/components/Hero.jsx -> src/components/Navbar.jsx
+#	modified:   src/components/PortfolioSection.css
+#	modified:   src/components/ReviewSection.css
+#	modified:   src/components/faqSection.css
+#	modified:   src/components/home.jsx
+#

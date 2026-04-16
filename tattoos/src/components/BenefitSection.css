@@ -1,0 +1,209 @@
+/* Core Section Setup */
+.benefit-section {
+  background-color: #ffffff; /* Deep, rich black */
+  color: #000000;
+  padding: 100px 5%;
+  font-family: 'Helvetica Neue', Inter, sans-serif;
+  overflow: hidden; /* Prevents horizontal scroll from rotated card */
+  -webkit-font-smoothing: antialiased;
+}
+
+.benefit-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Area */
+.benefit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.main-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sub-description {
+  max-width:480px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* Layout Wrapper for Grid and Floating Element */
+.benefit-content-wrapper {
+  position: relative;
+}
+
+/* 3-Column Grid Layout */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-left: 1px solid #222;
+  width: 70%; /* Leaves room for the floating card on the right */
+}
+
+.grid-item {
+  padding: 60px 40px;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared Typography & Icons */
+.icon-wrapper {
+  color: #ff2a2a; /* Vibrant piercing red */
+  width: 32px;
+  height: 32px;
+  margin-bottom: 80px; /* Pushes text to the bottom to match image */
+}
+
+.icon-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.item-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #888888;
+  margin: 0;
+}
+
+/* Floating / Tilted Card */
+.floating-card {
+  position: absolute;
+  top: -30%;  
+  left: 70%;
+  width: 20%;
+  height: 80%; 
+  color: white;
+  
+  background-color: #050505;
+  border: 1px solid #333;
+  padding: 60px 40px; /* Matches grid item padding */
+  display: flex;
+  flex-direction: column;
+  transform: rotate(28deg);
+  transform-origin: center center;
+  box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  
+  /* Smooth interaction for a premium feel */
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-card:hover {
+  transform: rotate(25deg) translateY(-10px);
+  box-shadow: -30px 30px 80px rgba(0, 0, 0, 1);
+}
+
+.floating-card .icon-wrapper {
+  margin-bottom: auto; /* Pushes the text block down */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .benefit-section {
+    padding: 72px 5%;
+  }
+
+  .benefit-header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .benefit-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .benefit-grid {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+
+  .grid-item {
+    padding: 40px 28px;
+    border-right: none;
+    border-bottom: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .grid-item:last-child {
+    border-bottom: none;
+  }
+
+  .floating-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 207px;
+    transform: rotate(0deg) !important;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    box-shadow: none;
+    padding: 40px 28px;
+    transform-origin: center center !important;
+    background-color: white;
+    color: #000000;
+    
+  }
+  
+  .floating-card:hover {
+    transform: none !important;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .benefit-section {
+    padding: 56px 18px;
+  }
+
+  .sub-description {
+    max-width: none;
+  }
+
+  .icon-wrapper {
+    margin-bottom: 48px;
+  }
+}

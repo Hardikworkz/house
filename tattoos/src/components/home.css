@@ -1,0 +1,145 @@
+/* Reset and Base */
+.artist-section {
+  background-color: #ffffff; /* Explicitly White */
+  color: #000000;            /* Explicitly Black */
+  padding: 80px 4% 40px 4%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header Layout */
+.artist-header {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* Asymmetric split */
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.label-tiny {
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.artist-name {
+  font-size: 80px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.statement-box {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+  padding-bottom: 5px; /* Aligns visually with the name baseline */
+}
+
+.text-faded {
+  color: #888888; /* Grey for the 'designed to work...' part */
+}
+
+/* Main Grid Layout */
+.artist-main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr; /* Exact 3-column split */
+  gap: 30px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Middle Column Alignment */
+.col-note {
+  display: flex;
+  align-items: center; /* Vertically centers the text relative to image height */
+  padding-top: 150px;  /* Adjusts the 'float' depth */
+}
+
+.mid-note {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+/* Stats and Right Column */
+.col-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #000000; /* Black borders as per image */
+  padding: 18px 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* Secondary Image & Socials */
+.stats-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Pushes image and socials to the right */
+  margin-top: 50px;
+}
+
+.secondary-img-wrapper {
+  position: relative;
+  width: 220px;
+}
+
+.secondary-img-wrapper img {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+}
+
+.red-plus-sign {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artist-socials {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.artist-socials a {
+  text-decoration: none;
+  color: #888888;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.artist-socials a:hover {
+  color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .artist-header, .artist-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .artist-name { font-size: 50px; }
+  .col-note { padding-top: 0; }
+  .stats-bottom { align-items: flex-start; }
+}

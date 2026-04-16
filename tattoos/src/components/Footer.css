@@ -1,0 +1,161 @@
+.footer-section {
+  background: #ffffff;
+  color: #000000;
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer-shell {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 34px 20px 12px;
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.footer-meta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.footer-meta__item--right {
+  align-self: flex-start;
+}
+
+.footer-copy,
+.footer-link {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.footer-link {
+  width: fit-content;
+  transition: opacity 0.25s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.72;
+}
+
+.footer-link--muted {
+  opacity: 0.96;
+}
+
+.footer-link--underlined {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+}
+
+.footer-wordmark {
+  margin-top: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-wordmark__mask {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-wordmark__line {
+  margin: 0;
+  color: #000000;
+  font-family: 'Gotham', 'League Spartan', 'Montserrat', sans-serif;
+  font-size: clamp(5.5rem, 16.5vw, 18rem);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  white-space: normal;
+  text-align: center;
+  transform: translateY(10%);
+}
+
+@media (max-width: 1200px) {
+  .footer-meta {
+    gap: 24px;
+  }
+
+  .footer-meta__item--right {
+    align-items: flex-start;
+  }
+
+  .footer-wordmark {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-shell {
+    padding: 28px 18px 12px;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .footer-copy,
+  .footer-link {
+    font-size: 15px;
+  }
+
+  .footer-meta__item,
+  .footer-meta__item--right {
+    min-width: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-wordmark {
+    margin-top: 34px;
+  }
+
+  .footer-wordmark__line {
+    font-size: clamp(3.4rem, 21vw, 8rem);
+    line-height: 0.9;
+    transform: translateY(4%);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-shell {
+    padding: 24px 16px 12px;
+  }
+
+  .footer-meta {
+    gap: 14px;
+  }
+
+  .footer-copy,
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-wordmark {
+    margin-top: 28px;
+  }
+
+  .footer-wordmark__line {
+    font-size: clamp(2.8rem, 16vw, 4.5rem);
+    line-height: 0.94;
+  }
+}
