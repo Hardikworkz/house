@@ -46,7 +46,7 @@ export default function FooterSection() {
       <div className="footer-shell">
         <div className="footer-meta">
           <div className="footer-meta__item">
-            <p className="footer-copy">© Noir Tattoo 2026</p>
+            <p className="footer-copy">© The House of Tattoos</p>
           </div>
 
           <div className="footer-meta__item">
@@ -60,16 +60,16 @@ export default function FooterSection() {
 
           <div className="footer-meta__item">
             <p className="footer-copy">Website Development:</p>
-            <a className="footer-link footer-link--underlined" href="#">
-              Tretyak Design
+            <a className="footer-link footer-link--underlined" href="mailto:workzhardik@gmail.com">
+              HARDIK LALWANI
             </a>
           </div>
 
           <div className="footer-meta__item footer-meta__item--right">
-            <a className="footer-link footer-link--underlined" href="#">
+            <a className="footer-link footer-link " href="#">
               Privacy Policy
             </a>
-            <a className="footer-link footer-link--underlined" href="#">
+            <a className="footer-link footer-link " href="#">
               Terms of Use
             </a>
           </div>

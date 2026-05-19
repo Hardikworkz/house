@@ -3,6 +3,9 @@ import { gsap } from 'gsap';
 import './Navbar.css';
 import { HiMiniArrowUturnRight } from "react-icons/hi2";  
 import founder from '../assets/founder.png';
+import logo_video from '../assets/last_logo.mp4';
+
+
 const defaultNavItems = [
   { label: 'About me', id: 'about' },
   { label: 'Portfolio', id: 'portfolio' },
@@ -103,8 +106,15 @@ export default function Hero({
 
         <header className={`noir-hero__nav${showStickyNav ? ' is-visible' : ''}`}>
           <button className="noir-hero__brand" type="button" onClick={() => onScrollTo('about')}>
-            <span className='span1'>THE HOUSE</span>
-            <span className='span2'>OF TATTOOS</span>
+            {/* REPLACED SPANS WITH VIDEO */}
+            <video 
+              className="noir-hero__brand-video"
+              src={logo_video}
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            />
           </button>
 
           <nav className="noir-hero__links" aria-label="Hero navigation">
