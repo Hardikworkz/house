@@ -161,16 +161,22 @@ const BookingSection = () => {
           <div className="booking-details">
             {/* 2x2 Social Media Grid */}
             <div className="social-grid">
-              <a href="#instagram" className="social-box box-ig">
-                <span className="social-name">Instagram</span>
+              <a href="https://www.instagram.com/thehouseoftattoos_?igsh=MWV1cjBzMzBhOW42cg==https://www.instagram.com" className="social-box box-ig">
+                <a className="social-name " style={{textDecoration: 'none', color:'black' }} href="https://www.instagram.com/thehouseoftattoos_?igsh=MWV1cjBzMzBhOW42cg==https://www.instagram.com">
+                  Instagram
+                </a>
                 <span className="red-plus">+</span>
               </a>
-              <a href="#youtube" className="social-box box-yt">
-                <span className="social-name">Whatsapp</span>
+              <a href="https://wa.me/919009148003" className="social-box box-yt">
+                <span className="social-name" href="https://wa.me/919009148003">
+                  Whatsapp
+                </span>
                 <span className="red-plus">+</span>
               </a>
-              <a href="#facebook" className="social-box box-fb">
-                <span className="social-name">Facebook</span>
+              <a href="https://www.facebook.com/profile.php?id=61567062790342" className="social-box box-fb">
+                <span className="social-name" href="https://www.facebook.com/profile.php?id=61567062790342">
+                  Facebook
+                </span>
                 <span className="red-plus">+</span>
               </a>
             </div>
@@ -180,8 +186,8 @@ const BookingSection = () => {
               <div className="contact-group">
                 <span className="grey-plus">+</span>
                 <div className="contact-links">
-                  <a href="mailto:tretyakbor@gmail.com">tretyakbor@gmail.com</a>
-                  <a href="tel:+380935336589">+38 093 533 65 89</a>
+                  <a href="mailto:prashanttheophil65@gmail.com">prashanttheophil65@gmail.com</a>
+                  <a href="tel:+919009148003">+91 90091 48003</a>
                 </div>
               </div>
 

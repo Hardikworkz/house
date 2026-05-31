@@ -145,9 +145,15 @@ const ArtistSection = () => {
               </div>
               
               <div className="social-links-footer">
-                <a href="#Whatsapp">Whatsapp</a>
-                <a href="#facebook">Facebook</a>
-                <a href="#instagram">Instagram</a>
+                <a href="https://wa.me/919009148003" target="_blank" rel="noopener noreferrer">
+                  Whatsapp
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61567062790342" target="_blank" rel="noopener noreferrer">
+                  Facebook
+                </a>
+                <a href="https://www.instagram.com/thehouseoftattoos_?igsh=MWV1cjBzMzBhOW42cg==https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </a>
               </div>
             </div>
           </div>

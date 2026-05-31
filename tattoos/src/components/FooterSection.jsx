@@ -50,11 +50,11 @@ export default function FooterSection() {
           </div>
 
           <div className="footer-meta__item">
-            <a className="footer-link" href="mailto:tretyakbor@gmail.com">
-              tretyakbor@gmail.com
+            <a className="footer-link" href="mailto:prashanttheophil65@gmail.com">
+              prashanttheophil65@gmail.com
             </a>
-            <a className="footer-link footer-link--muted" href="tel:+380935336589">
-              +38 093 533 65 89
+            <a className="footer-link footer-link--muted" href="wa.me/919009148003">
+              +91 90091 48003
             </a>
           </div>
 
